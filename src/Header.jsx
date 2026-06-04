@@ -17,7 +17,7 @@ const Header = ({ refreshCart }) => {
     try {
 
       const response = await axios.get(
-        "http://localhost:5001/cart/list",
+        "https://jaysheen-e-commerce-website-production.up.railway.app/cart/list",
         {
           withCredentials: true
         }
@@ -68,7 +68,7 @@ const Header = ({ refreshCart }) => {
       };
 
       const res = await axios.post(
-        'http://localhost:5001/checkout/store',
+        'https://jaysheen-e-commerce-website-production.up.railway.app/checkout/store',
         checkoutData,
         {
           withCredentials: true
@@ -129,7 +129,7 @@ const Header = ({ refreshCart }) => {
     try {
 
       const response = await axios.delete(
-        "http://localhost:5001/cart/delete",
+        "https://jaysheen-e-commerce-website-production.up.railway.app/cart/delete",
         {
           data: { name: productName }
         }
@@ -330,7 +330,7 @@ const finalPrice = totalPrice - discount;
 
                       <td>
                         <img
-                          src={`http://localhost:5001/uploads/${v.image}`}
+                          src={`https://jaysheen-e-commerce-website-production.up.railway.app/uploads/${v.image}`}
                           alt=""
                           width={80}
                         />

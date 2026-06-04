@@ -33,7 +33,7 @@ export default function Home() {
     try {
 
       const res = await axios.get(
-        'http://localhost:5001/product/list'
+        'https://jaysheen-e-commerce-website-production.up.railway.app/product/list'
       );
 
       setProductdata(res.data.data);
@@ -62,7 +62,7 @@ export default function Home() {
   const addtocart = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5001/cart/store",
+        "https://jaysheen-e-commerce-website-production.up.railway.app/cart/store",
         {
           method: "POST",
           credentials: "include",
@@ -169,7 +169,7 @@ export default function Home() {
                         className={`carousel-item ${index === 0 ? "active" : ""}`}
                       >
                         <img
-                          src={`http://localhost:5001/uploads/${encodeURIComponent(img)}`}
+                          src={`https://jaysheen-e-commerce-website-production.up.railway.app/uploads/${encodeURIComponent(img)}`}
                           className="d-block w-100"
                           alt={v.name}
                           style={{
@@ -338,7 +338,7 @@ export default function Home() {
       className="img-fluid w-100 rounded"
       src={
         selectedImage
-          ? `http://localhost:5001/uploads/${encodeURIComponent(selectedImage)}`
+          ? `https://jaysheen-e-commerce-website-production.up.railway.app/uploads/${encodeURIComponent(selectedImage)}`
           : ""
       }
       alt=""
@@ -384,7 +384,7 @@ export default function Home() {
                   className="col-3"
                 >
                   <img
-                    src={`http://localhost:5001/uploads/${encodeURIComponent(
+                    src={`https://jaysheen-e-commerce-website-production.up.railway.app/uploads/${encodeURIComponent(
                       img
                     )}`}
                     alt=""
