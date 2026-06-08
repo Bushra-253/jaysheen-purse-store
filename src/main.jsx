@@ -4,13 +4,9 @@ import './index.css'
 import App from './App.jsx'
 import Header from './Header.jsx'
 import Home from './pages/Home.jsx'
-
-
 import Product from './Product.jsx'
-
 import Card from './Components/Card.jsx'
 import Carddetail from './Carddetail.jsx'
-
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 import Orders from './Order.jsx'
 import Admin from './Admin.jsx'
