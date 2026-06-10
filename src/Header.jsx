@@ -190,7 +190,16 @@ const finalPrice = totalPrice - discount;
             className='b1'
             alt=""
           />
-
+<div className="d-none d-sm-flex d-lg-none">
+  <button
+    className="btn btn-outline-dark fw-bold"
+    data-bs-toggle="modal"
+    data-bs-target="#cartModal"
+  >
+    <i className="fa-solid fa-cart-arrow-down"></i>
+    {" "}Cart ({totalcart})
+  </button>
+</div>
           <button
             className="navbar-toggler"
             type="button"
@@ -244,19 +253,16 @@ const finalPrice = totalPrice - discount;
 
             </ul>
 
-            <div className="d-flex">
-
-              <button
-                className="btn btn-outline-dark fw-bold"
-                data-bs-toggle="modal"
-                data-bs-target="#cartModal"
-              >
-                <i className="fa-solid fa-cart-arrow-down"></i>
-
-                {" "}Cart ({totalcart})
-              </button>
-
-            </div>
+           <div className="d-none d-lg-flex">
+  <button
+    className="btn btn-outline-dark fw-bold"
+    data-bs-toggle="modal"
+    data-bs-target="#cartModal"
+  >
+    <i className="fa-solid fa-cart-arrow-down"></i>
+    {" "}Cart ({totalcart})
+  </button>
+</div>
 
           </div>
         </div>
