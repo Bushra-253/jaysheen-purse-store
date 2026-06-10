@@ -190,7 +190,7 @@ const finalPrice = totalPrice - discount;
             className='b1'
             alt=""
           />
-<div className="d-none d-sm-flex d-lg-none">
+<div className=" d-sm-flex d-lg-none">
   <button
     className="btn btn-outline-dark fw-bold"
     data-bs-toggle="modal"
